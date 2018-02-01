@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Updating and removing unused packages
 sudo apt -y update
 sudo apt -y upgrade
