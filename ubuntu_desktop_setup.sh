@@ -19,7 +19,7 @@ sudo apt install -y vlc browser-plugin-vlc libdc1394-22-dev libavcodec-dev libav
 sudo apt install -y redshift redshift-gtk unity-tweak-tool gparted sshfs putty filezilla
 
 # Web servers and database servers.
-sudo apt install -y postgresql postgresql-contrib nginx
+sudo apt install -y postgresql postgresql-contrib nginx pgweb
 
 # Python related packages
 sudo apt install -y python-dev python-tk python-numpy python3-dev python3-tk python3-numpy
