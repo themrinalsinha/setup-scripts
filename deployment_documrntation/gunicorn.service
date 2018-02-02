@@ -1,0 +1,14 @@
+#/etc/systemd/system/gunicorn.service 
+[Unit]
+Description=sample_project gunicorn daemon
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/sample_project
+ExecStart=/home/ubuntu/django_env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/ubuntu/sample_project/sample_project.sock sample_project.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+
