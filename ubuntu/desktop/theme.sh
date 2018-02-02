@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Tested in Ubuntu 16.04.3
+
 # DEFINING COLORS
 tput clear
 RED=`tput setaf 1`
