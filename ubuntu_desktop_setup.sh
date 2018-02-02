@@ -23,3 +23,6 @@ sudo apt install -y postgresql postgresql-contrib nginx pgweb
 
 # Python related packages
 sudo apt install -y python-dev python-tk python-numpy python3-dev python3-tk python3-numpy
+
+# Installing Hindi font pack
+sudo apt install -y fonts-indic
