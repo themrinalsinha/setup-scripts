@@ -36,13 +36,6 @@ utility_packages=(
     'sshfs'
 )
 
-web_db_server=(
-    'nginx'
-    'sqlite3'
-    'postgresql'
-    'postgresql-contrib'
-)
-
 python_packages=(
     'python-dev'
     'python-numpy'
@@ -65,13 +58,6 @@ done
 
 sudo echo -e "\n${BOLD}${YELLOW}INSTALLING UTILITY PACKAGES${RESET}\n"
 for pkg in "${utility_packages[@]}"; do
-    echo "${YELLOW}Installing :${RESET} ${BOLD}$pkg${RESET}"
-    sudo apt install "$pkg" -y &> /dev/null
-    check_status
-done
-
-sudo echo -e "\n${BOLD}${YELLOW}INSTALLING WEB & DATABASE SERVER PACKAGES${RESET}\n"
-for pkg in "${web_db_server[@]}"; do
     echo "${YELLOW}Installing :${RESET} ${BOLD}$pkg${RESET}"
     sudo apt install "$pkg" -y &> /dev/null
     check_status
