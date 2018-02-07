@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Tested in Ubuntu 16.04.3
+# TASK: Fix error occured while testing it on Ubuntu Mate
 
 # DEFINING COLORS
 tput clear
