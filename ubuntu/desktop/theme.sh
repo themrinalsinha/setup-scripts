@@ -45,5 +45,11 @@ sudo echo -e "\n${BOLD}${YELLOW}INSTALLING (unity-tweak-tool)${RESET}"
 sudo xterm -e 'apt install -y unity-tweak-tool'
 check_status
 
+# REMOVING ALL THE GARBAGES.
+sudo echo -e "\n${BOLD}${YELLOW}REMOVING TEMPERORY PPA${RESET}"
+sudo xterm -e 'add-apt-repository --remove ppa:ravefinity-project/ppa -y && \
+               add-apt-repository --remove ppa:noobslab/icons -y && \
+               apt -y autoremove && apt -y autoclean'
+check_status
 
 sudo echo -e "\n${BOLD}${YELLOW}<-- COMPLETED -->${RESET}"
