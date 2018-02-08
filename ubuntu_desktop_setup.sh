@@ -6,6 +6,16 @@ sudo apt -y upgrade
 sudo apt -y dist-upgrade
 sudo apt -y autoremove
 
+check_status()
+{
+    if [ $? -eq 0 ]; then
+        echo " ->${GREEN} SUCCESSFUL${RESET}"
+    else
+        echo " ->${RED} FAILED${RESET}"
+    fi
+
+}
+
 # Essential packages
 sudo apt install -y build-essential g++ cmake git libpq-dev synaptic \
                     gdebi alien checkinstall zip unzip
