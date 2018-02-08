@@ -22,6 +22,10 @@ check_status()
 
 }
 
+# UPDATING AND UPGRADING SYSTEM
+sudo echo -e "\n${BOLD}${YELLOW}STARTING SYSTEM UPDATE${RESET}"
+sudo xterm -e 'apt update -y && apt upgrade -y && apt autoremove -y'
+check_status
 
 # INSTALLING THEME
 sudo echo -e "\n${BOLD}${YELLOW}INSTALLING THEME (vivacious dark/light)${RESET}"
@@ -41,11 +45,5 @@ sudo echo -e "\n${BOLD}${YELLOW}INSTALLING (unity-tweak-tool)${RESET}"
 sudo xterm -e 'apt install -y unity-tweak-tool'
 check_status
 
-# REMOVING ALL THE GARBAGES.
-sudo echo -e "\n${BOLD}${YELLOW}REMOVING TEMPERORY PPA${RESET}"
-sudo xterm -e 'add-apt-repository --remove ppa:ravefinity-project/ppa -y && \
-               add-apt-repository --remove ppa:noobslab/icons -y && \
-               apt -y autoremove && apt -y autoclean'
-check_status
 
 sudo echo -e "\n${BOLD}${YELLOW}<-- COMPLETED -->${RESET}"
