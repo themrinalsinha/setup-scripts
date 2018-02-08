@@ -22,10 +22,6 @@ check_status()
 
 }
 
-# UPDATING AND UPGRADING SYSTEM
-sudo echo -e "\n${BOLD}${YELLOW}STARTING SYSTEM UPDATE${RESET}"
-sudo xterm -e 'apt update -y && apt upgrade -y && apt autoremove -y'
-check_status
 
 # INSTALLING THEME
 sudo echo -e "\n${BOLD}${YELLOW}INSTALLING THEME (vivacious dark/light)${RESET}"
