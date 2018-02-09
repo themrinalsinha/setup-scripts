@@ -24,12 +24,14 @@ essential_packages=(
     'g++'
     'git'
     'zip'
+    'ufw'
     'cmake'
     'gdebi'
     'alien'
     'unzip'
     'libpq-dev'
     'checkinstall'
+    'openssh-server'
 )
 
 utility_packages=(
